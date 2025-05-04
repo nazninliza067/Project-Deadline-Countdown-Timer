@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.countdown-container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.countdown {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 20px;
+}
+
+.countdown h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.timer-container {
+    margin-top: 10px;
+}
+
+.timer {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+ol {
+    text-align: left;
+    padding: 0;
+}
+
+ol li {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.warning {
+    color: orange;
+    animation: pulse 1s infinite;
+}
+
+.danger {
+    color: red;
+    animation: shake 0.5s infinite alternate;
+}
+
+.remove-btn {
+    padding: 10px 20px;
+    background-color: #f44336 !important;
+    color: white !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+    background-color: #d32f2f !important;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(0, 255, 0, 0.7); }
+    100% { box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); }
+}
+
+.glow {
+    animation: glow 2s infinite alternate;
+}
+
+.history-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #393079;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.history-btn:hover {
+    background-color: #181860;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.start-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#historyPage {
+    display: none;
+    text-align: center;
+}
+
+.back-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    background-color: #d32f2f;
+}
+
+#inputContainer {
+    display: block;
+}
+
+#historyPage #inputContainer {
+    display: none;
+}

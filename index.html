@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button class="history-btn" onclick="showHistory()">History</button>
+
+    <div class="countdown-container" id="mainPage">
+        <ol id="projectList"></ol>
+    </div>
+
+    <div id="inputContainer">
+        <input type="text" id="projectName" placeholder="Enter Project Name">
+        <input type="date" id="deadlineInput">
+        <button class="start-btn" onclick="addProject()">Start Countdown</button>
+    </div>
+
+    <div id="historyPage">
+        <h2>History</h2>
+        <pre id="historyList"></pre>
+        <button class="back-btn" onclick="backToMain()">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
